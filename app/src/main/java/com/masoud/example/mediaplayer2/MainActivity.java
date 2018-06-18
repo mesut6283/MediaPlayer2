@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     TextView titleTextView;
     MediaPlayer mp;
     SeekBar seekbar;
+    SeekBar seekbar2;
     Handler handler;
     Runnable runnable;
     ImageView songImageView;
