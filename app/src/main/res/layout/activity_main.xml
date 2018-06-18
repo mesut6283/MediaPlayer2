@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.masoud.example.mediaplayer2.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+        <ImageView
+            android:id="@+id/songImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eee"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/playBtn"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/play_selector"
+            android:tag="pause" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2d2d2d"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/red_scrubber_progress"
+        android:thumb="@drawable/normal_scrobler" />
+
+</LinearLayout>
